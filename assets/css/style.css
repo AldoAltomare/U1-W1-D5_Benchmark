@@ -1,151 +1,154 @@
-/* IMPOSTAZIONI GENERALI */
-html {font-size: 62.5%;}
-body { 
-    font-family: Poppins, 'Open Sans', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    padding: 0px;
-    background-image: url('../img/sfondo.png');
-    background-position: center center;
-    max-width: 500px;
-}
-* {box-sizing: border-box;}
-hr {display: none;} /* rimuove l'elemento */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
 
-/* HEADER */
-header {
+
+header
+{
     background: black;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     color: white;
-    padding: 2em 1.5em;
-}
-header nav ul {
-    margin: 0;
-}
-header nav li {
-    list-style: none;
-}
-header nav li a {
-    color: white;
-    text-decoration: none;
-}
-header nav li a::before {
-    content: "\22c6\0020";
+    padding: 40px 100px;
+    height:max-content;
 }
 
-/* MAIN */
-main {
-    background-color: #fff;
-    box-shadow: 0 3px 3px #444;
-}
-
-#first-section {
-    background-image:url('../img/banner.jpg');
-    background-attachment:fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-section h2 {
-    text-align: center;
-    color: #25a2c3;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1em;
-}
-
-/* ELEMENTI NEL MAIN - ARTICLE */
-h1 {
-    font-size: 2.6rem;
-    font-weight: bold;
-    letter-spacing: -0.03em;
-    margin-bottom: 0.7em;
-    color: #25a2c3
-
-}
-p, address, ul, ol, dl, blockquote {
-    margin-bottom: 1.2em;
-}
-h1 + p {
-    color: #a0a0a0;
-}
-ul, ol {
-    margin-left: 2em;
-}
-a {
-    color: #00A0C6;
-    font-weight: bold;
-}
-strong {
-    color: #a02571;
-    font-weight: bold;
-}
-
-section :not(#first-section) 
+body 
 {
-margin-top: 20px;
+    font-family: 'Opens Sans', sans-serif;
+    line-height: 1.65em;
+    text-align: center;
 }
 
-section img {
- border-radius: 50%;
-}
-
-button {
-    padding: 4px 7px;
+button
+{
     background-color: #f04c2f;
-    border: 0;
+    height: 30px;
+    font-weight: bold;
     color: white;
-    font-weight: bold;
-    border-radius: 2px;
+    border: none;
+    padding: 7px 20px;
+    font-family: 'Montserrat (bold)', sans-serif;
+    border-radius: 3px;
 }
 
-/* ELEMENTI NELL' ASIDE */
-aside h2 {
+nav 
+{
     text-align: center;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 1em;
-}
-aside div {
-    background-color: #e3e3e3;
-    border: 1px solid #c3c3c3;
-    margin-bottom: 1em;
-    padding: 1em;
-}
-
-#testimonianze {
-    background-color: #e22d0e;
-    color: #fff;
-}
-
-aside div img{
-    background-color: #e3e3e3;
-    border: 1px solid #c3c3c3;
-    margin-bottom: 1em;
-    padding: 1em;
-}
-aside div p:last-child {
-    margin-bottom: 0;
-    font-size: 0.8em;
-    text-align: right;
-}
-
-
-/* FOOTER */
-footer {
-    background: #25a2c3;
-    box-shadow: 0 3px 3px #444;
-    color: #f0f0f0;
-    padding: 1em;
-    text-align: center;
+    font-family: Poppins, 'Open Sans', sans-serif;
     font-size: 1.2rem;
+    height: 300px;
+    padding: 60px;
+    background-image: url('../img/banner.jpg');
+    background-size:cover;
+    background-position: center center;
+    margin: auto;
 }
-footer a {
-    color: fuchsia;
-}/* Your styles here */
+
+main 
+{
+    margin: 20px;
+    padding: 0px;
+    box-sizing: border-box;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+main img
+{
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+main div
+{
+    max-width: 350px;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+
+h1
+{
+    font-size:xx-large;
+}
+
+h1,h3
+{
+    color: #25a2c3;
+    text-align: center;
+    font-family: 'Montserrat (bold)', sans-serif;
+    line-height: 1.5em;
+}
+
+h2
+{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat (bold)', sans-serif;
+    line-height: 1.5em;
+    font-size:xx-large;
+}
+
+h3
+{
+    margin: 5px;
+}
+
+aside
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cards 
+{
+    height: auto;
+    border: 2px solid #dee1e3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+section 
+{
+    background-color: #e22d0e;
+    color: white;
+    padding: 30px 40px;
+}
+
+section p:first-of-type
+{
+   font-size: x-large;
+}
+
+section p:last-of-type
+{
+   font-size: smaller;
+}
+
+footer 
+{
+    color: white;
+    background-color: #25a2c3;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+footer hr
+{
+    display: inline-block;
+    width: 200px;
+}
+
+img
+{
+    max-width: 350px;
+    margin: auto;
+    object-fit: contain;
+}
+cite
+{
+    font-style: italic;
+}
